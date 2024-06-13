@@ -54,8 +54,7 @@ body {
 
 /************** WIDGET 1*/
 .top {
-    width: 100%;
-    min-width: 550px;
+    width: 100%;    
     height: 100vh;
     border-radius: 10px;
     display: flex;
@@ -93,7 +92,7 @@ body {
 }
 
 .img-user img {
-    width: 120px;
+    width: 80px;
     border-radius: 10px;
 }
 
@@ -121,7 +120,7 @@ body {
 .info-user p {
     margin-top: auto; 
     padding-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--color-black);
 }
 
@@ -433,6 +432,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: none;
 }
 
 .btn2 {
@@ -441,5 +441,130 @@ body {
     font-weight: 600;
     padding: .7rem 1.3rem;
     border-radius: 10px;
+    border: none;
     text-decoration: none;
 }
+
+.btn2:hover{
+    cursor: pointer;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;    
+    bottom: 0;
+    background-color: #fefefe;
+    width: 90%;
+    height: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #266676;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;    
+    height: 90%;
+    
+}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #266676;
+    color: white;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+
+  /* FORMULARIO DE CONTATO*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #266676;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #266676;
+  }
+  
+  .container {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */ /* PRECISO ARRUMAR ESSE BACKGROUND-COLOR DO FORMULARIO,
+                                         ELE ESTÁ SE APLICANDO PARA A PAGINA TODA*/
+    padding: 20px;
+  }
